@@ -147,6 +147,15 @@ i.addEventListener("click", function(){
  alert("hola");
 });
 ````
+####Manipulación del contenido de los elementos
+````javascript
+<ul id="myList"></ul>
 
+var node = document.createElement("li");            
+var textnode = document.createTextNode("Water");    
+node.appendChild(textnode);                         
+document.getElementById("myList").appendChild(node);
+````
+En este ejemplo se agrega un ítem a la lista que contiene un elemento de texto dentro.
 
 
