@@ -121,6 +121,24 @@ console.log(pedro["nombre"]);
 Cuando corremos Javascript dentro de un navegador buscamos interactuar con el contenido de la página para hacerlo necesitamos acceder a algo llamado *DOM* (document object model) y es una representación en memoria de todo el contenido de la página actual, es decir, el navegador recibe el HTML y a partir de él genera el DOM con su representación, la misma es un modelo de objetos.
 ![img](dom_level0.gif)
 
+Dentro de esta jerarquía de objetos vamos a interactuar mayormte con *document* el cual representa a la página (documento) actualmente cargado en el navegador.
+
+###El objeto document
+El mismo tiene un conjunto de método que nos van a permitir manipular los elementos de la página, por ejemplo:
+````javascript
+var divs = document.getElementsByTagName("div");
+divs.length;
+var div0 = vids[0];
+````
+En este ejemplo utilizamos el método *getElementsByTagName* para recuperar todos los elementos *DIV* de la página, luego mostramos su cantidad y luego tomamos el primero utilizando el índice del array.
+
+####Cambiar el contenido
+Una vez que recuperamos el elemento podemos manipularlo, por ejemplo:
+````javascript
+var element = document.getElementById("midiv");
+element.style.backgroundColor = "blue";
+````
+
 
 
 
