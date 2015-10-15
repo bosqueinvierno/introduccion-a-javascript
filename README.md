@@ -9,12 +9,12 @@ Existen varias versiones del lenguaje vamos a concentrarnos en las característi
 
 Características más sobresalientes:
 
-- Tipado Dinámico: una variable puede tomar diferentes valores y tipos
-- Interpretado: no se compila, se interpreta mientas se ejecuta
+- Tipado Dinámico: una variable puede tomar diferentes valores y tipos.
+- Interpretado: no se compila, se interpreta mientas se ejecuta.
 - Basado en objetos.
 - Se utiliza principalmente en navegadores web si bien es posible hacerlo en otras plataformas.
 - Tiene un pequeño número de objetos predefinidos.
-- Se accede a las propiedades de los objetos como un array asociativo o con .
+- Se accede a las propiedades de los objetos como un array asociativo o con *.*
 - Las funciones son objetos en sí mismo.
 - Utiliza prototipos en lugar de clases para la herencia.
 - Las funciones se pueden comportar como constructores de objetos.
@@ -40,5 +40,5 @@ La palabra var nos permite declarar una variable, nunca espeficamos el tipo sino
 var nombre = "Leonardo";
 nombre.indexOf("e");
 ````
-En este ejemplo la función indexOf nos devuelve la posición de la letra "e" dentro de la variable.
+En este ejemplo la función *indexOf* nos devuelve la posición de la letra *e* dentro de la variable.
 
