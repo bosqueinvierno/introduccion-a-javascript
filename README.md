@@ -148,9 +148,10 @@ i.addEventListener("click", function(){
 });
 ````
 ####Manipulación del contenido de los elementos
-````javascript
+````html
 <ul id="myList"></ul>
-
+````
+````javascript
 var node = document.createElement("li");            
 var textnode = document.createTextNode("Water");    
 node.appendChild(textnode);                         
