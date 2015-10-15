@@ -119,7 +119,7 @@ console.log(pedro["nombre"]);
 
 ##Las páginas Web y DOM
 Cuando corremos Javascript dentro de un navegador buscamos interactuar con el contenido de la página para hacerlo necesitamos acceder a algo llamado *DOM* (document object model) y es una representación en memoria de todo el contenido de la página actual, es decir, el navegador recibe el HTML y a partir de él genera el DOM con su representación, la misma es un modelo de objetos.
-
+![img](dom_level0.gif)
 
 
 
