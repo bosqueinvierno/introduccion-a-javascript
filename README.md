@@ -138,7 +138,15 @@ Una vez que recuperamos el elemento podemos manipularlo, por ejemplo:
 var element = document.getElementById("midiv");
 element.style.backgroundColor = "blue";
 ````
-
+####Eventos
+Es posible utilizar el DOM para manejar eventos sobre cualquiera de los objetos:
+````javascript
+var i = document.getElementById("boton");
+i.addEventListener("click", function(){
+ //callback
+ alert("hola");
+});
+````
 
 
 
