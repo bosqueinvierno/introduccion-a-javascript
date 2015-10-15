@@ -18,16 +18,13 @@ Características más sobresalientes:
 - Las funciones son objetos en sí mismo.
 - Utiliza prototipos en lugar de clases para la herencia.
 - Las funciones se pueden comportar como constructores de objetos.
-
-
-Javascript posee las estructuras más clásicas dentro de su sintáxis:
-
-- for
-- do
-- while
-- if
-- else
-- switch
+- Estrcuturado, posee muchas de las estructuras de C
+	- for
+	- do
+	- while
+	- if
+	- else
+	- switch
 
 ##Cómo declarar una variable en Javascript?
 ````javascript
@@ -47,8 +44,80 @@ Los navegadores moderno nos dan la posibilidad de ejecutar Javascript en una con
 En IE, Edge, Firefox y Chrome podemos acceder mediante la tecla F12.
 ###El objeto console
 Todos estas herramientas nos proveen de un objeto que se agrega a Javascript llamado *console* el mismo posee un grupo de funciones para imprimir dentro de la herramientas y algunas cosas más.
-La que más vamos a usar es *console.write* que nos permite imprimir directo el valor de cualquier variable.
+La que más vamos a usar es *console.log* que nos permite imprimir directo el valor de cualquier variable.
 
+````javascript
+console.log(nombre.indexOf("e"));
+````
+
+### Tipado dinámico
+Podemos cambiar el valor de la variable *nombre* por supuesto, pero también podemos cambiar el tipo, por ejemplo:
+````javascript
+var nombre = "Leonardo";
+console.log(nombre);
+nombre = 123;
+console.log(nombre);
+````
+
+Las funciones se comportan como variádicas, es decir, pueden recibir cualquier cantidad de parámetros.
+
+````javascript
+function concatenar(a, b, c){
+	return a + b + c;
+}
+
+console.log(concatenar("hola ", "mundo"));
+````
+
+##Objetos
+Es posible definir nuestros propios objetos en Javascript, para hacerlo hay dos formas.
+###Funciones constructor
+````javascript
+function Persona(){
+}
+var pedro = new Persona();
+console.log(pedro);
+````
+
+Esta función nos permite crear objetos haciendo uso de la palabra *new*.
+
+Si quisiéramos que el objeto tuviera sus propiedad y métodos podemos hacer esto:
+````javascript
+function Persona(){
+	this.nombre = "";
+	this.edad = 0;
+}
+
+var pedro = new Persona();
+pedro.nombre = "Pedro";
+pedro.edad = 12;
+console.log(pedro);
+````
+
+Otra forma de declarar objetos es la siguiente:
+
+````javascript
+var pedro = {
+	nombre: "",
+	edad:0
+};
+````
+En este caso creamos el objeto y no podemos hacer new, la variable ya contiene el objeto.
+
+##JSON
+
+El útimo ejemplo de declaración de objetos utiliza un sintaxis especial de Javascript llamada *JSON* (Javascript object notation) y es de gran utilidad ya que podemos intercambiar estrucutras de datos completas utilizándola.
+
+###Arrays asociativos
+
+En realidad la utilización del *.* para llamar a los miembros de un objeto es *syntax sugar* (si bien es la más utilizada) la forma "normal" sería así:
+
+````javascript
+console.log(pedro["nombre"]);
+````
+
+
+##Las páginas Web y DOM
 
 
 
