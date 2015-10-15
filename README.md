@@ -4,20 +4,20 @@ Esta introducción a Javascript no pretende ser material detallado del lenguaje 
 Vamos a mezclar conceptos del lenguaje con elementos propios de su funcionamiento dentro de un navegador.
 
 ##Qué es Javascript
-Javascript es un lenguaje de programación que puede ser interpretado por los navegadores web de la actualidad, permite manipular todo el contenido de una página web a partir de su interacción con el DOM y las capacidades que le da AJAX.
+Javascript es un lenguaje de programación que puede ser interpretado por los navegadores web de la actualidad, permite manipular todo el contenido de una página web a partir de su interacción con el [DOM](#las-páginas-web-y-dom) y las capacidades que le da AJAX.
 Existen varias versiones del lenguaje vamos a concentrarnos en las características más comunes al día de la fecha.
 
 Características más sobresalientes:
 
-- Tipado Dinámico: una variable puede tomar diferentes valores y tipos.
+- [Tipado Dinámico](#tipado-dinámico): una variable puede tomar diferentes valores y tipos.
 - Interpretado: no se compila, se interpreta mientas se ejecuta.
-- Basado en objetos.
+- [Basado en objetos](#objetos).
 - Se utiliza principalmente en navegadores web si bien es posible hacerlo en otras plataformas.
 - Tiene un pequeño número de objetos predefinidos.
-- Se accede a las propiedades de los objetos como un array asociativo o con *.*
+- Se accede a las propiedades de los objetos como un [array asociativo](#arrays-asociativos) o con *.*
 - Las funciones son objetos en sí mismo.
 - Utiliza prototipos en lugar de clases para la herencia.
-- Las funciones se pueden comportar como constructores de objetos.
+- Las funciones se pueden comportar como [constructores de objetos](#funciones-constructor).
 - Estrcuturado, posee muchas de las estructuras de C
 	- for
 	- do
@@ -106,7 +106,7 @@ En este caso creamos el objeto y no podemos hacer new, la variable ya contiene e
 
 ###JSON
 
-El útimo ejemplo de declaración de objetos utiliza un sintaxis especial de Javascript llamada *JSON* (Javascript object notation) y es de gran utilidad ya que podemos intercambiar estrucutras de datos completas utilizándola.
+El útimo ejemplo de declaración de objetos utiliza un sintaxis especial de Javascript [llamada JSON](http://json.org/json-es.html) (Javascript object notation) y es de gran utilidad ya que podemos intercambiar estrucutras de datos completas utilizándola.
 
 ###Arrays asociativos
 
