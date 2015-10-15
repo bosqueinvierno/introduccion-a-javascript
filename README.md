@@ -42,3 +42,14 @@ nombre.indexOf("e");
 ````
 En este ejemplo la función *indexOf* nos devuelve la posición de la letra *e* dentro de la variable.
 
+##Herramientas de depuración e inspección
+Los navegadores moderno nos dan la posibilidad de ejecutar Javascript en una consola y de hacer muchas de las tareas de depuración mediante alguna herramienta de desarrollo.
+En IE, Edge, Firefox y Chrome podemos acceder mediante la tecla F12.
+###El objeto console
+Todos estas herramientas nos proveen de un objeto que se agrega a Javascript llamado *console* el mismo posee un grupo de funciones para imprimir dentro de la herramientas y algunas cosas más.
+La que más vamos a usar es *console.write* que nos permite imprimir directo el valor de cualquier variable.
+
+
+
+
+
