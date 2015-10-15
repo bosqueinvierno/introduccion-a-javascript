@@ -35,7 +35,7 @@ var nombre = "Leonardo";
 ````
 La palabra var nos permite declarar una variable, nunca espeficamos el tipo sino que el mismo es inferido por el contenido, en este caso una cadena de texto.
 
-###Una vez declarada la variable se comporta según su tipo, es decir, podemos utilizar algunas de las funciones propias del tipo, por ejemplo:
+Una vez declarada la variable se comporta según su tipo, es decir, podemos utilizar algunas de las funciones propias del tipo, por ejemplo:
 ````javascript
 var nombre = "Leonardo";
 nombre.indexOf("e");
